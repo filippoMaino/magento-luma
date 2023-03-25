@@ -21,7 +21,7 @@ class Url
     {
         $isValid = true;
 
-        if (!filter_var($value, FILTER_VALIDATE_URL)) {
+        if (!filter_var($value, FILTER_VALIDATE_DOMAIN)) {
             $isValid = false;
         }
 
